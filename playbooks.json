@@ -1,0 +1,3 @@
+---
+---
+[{% for pb in site.playbooks %}{"name":"{{ pb.name }}","identifier":"{{ pb.identifier }}","steps":{{ pb.steps | jsonify }}}{% if forloop.index0 == 0 %},{% else %}{% endif %}{% endfor %}]

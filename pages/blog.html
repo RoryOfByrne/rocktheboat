@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<h3>Blog</h3>
+
+<p class="mb-3">RSS feed available <a href="/feed.xml">here</a>.</p>
+
+{% for post in site.posts %}
+
+<article class='post'>
+  <h3 class='post-title'>
+    <a href="{{ site.path }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h3>
+  <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+  {{ post.content | strip_html | truncatewords: 50 }}
+</article>
+
+{% endfor %}
+

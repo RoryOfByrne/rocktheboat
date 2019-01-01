@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class='playbook'>
+  <h1 class='name'>{{ page.name }}</h1>
+  <ol>
+    {% for step in page.steps %}
+      <li>{{ step }}</li>
+    {% endfor %}
+  </ol>  
+</div>
+

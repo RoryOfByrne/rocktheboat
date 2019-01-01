@@ -1,0 +1,51 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<h2>About</h2>
+
+<p>{{ site.aboutme }}</p>
+
+<h3>Books</h3>
+<div class="mb-3">
+    <p>
+        Books that I'm reading.
+    </p>
+    <ul>
+        {% for book in site.data.books %}
+            {% if book.state == "reading" %}
+                <li>
+                    {% if book.link %} 
+                        <a href="{{ book.link }}">{{ book.title }}</a>,
+                    {% else %} 
+                        {{ book.title }},
+                    {% endif %}
+                    by {{ book.author }}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+
+<div class="mb-3">
+    <p>
+        Bookshelf
+    </p>
+    <ul>
+        {% for book in site.data.books %}
+            {% if book.state == "shelf" %}
+                <li>
+                    {% if book.link %} 
+                        <a href="{{ book.link }}">{{ book.title }}</a>,
+                    {% else %} 
+                        {{ book.title }},
+                    {% endif %}
+                    by {{ book.author }}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

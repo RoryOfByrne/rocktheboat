@@ -1,0 +1,24 @@
+- author: J.K. Rowling
+  title: Harry Potter Á L'École Des Sorciers
+  state: shelf
+- author: Malcolm Gladwell
+  title: Outliers
+  state: shelf
+- author: Daniel Goleman
+  title: Emotional Intelligence
+  state: shelf
+- author: Andrew Roberts
+  title: Napoleon The Great
+  state: reading
+- author: Michael Nygard
+  title: Release It!
+  state: shelf
+- author: Joshua Bloch
+  title: Effective Java
+  state: reading
+- author: William Gibson
+  title: Neuromancer
+  state: shelf
+- author: K. Kogon, S. Blakemore, J. Wood
+  title: PM for the unofficial PM
+  state: shelf

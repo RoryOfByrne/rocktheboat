@@ -1,0 +1,21 @@
+---
+layout: default
+title: Playbooks
+permalink: /playbooks/
+---
+
+<h3>Playbooks</h3>
+<p>
+    Playbooks are simple step-by-step guides for completing tasks. The goal is to reduce the amount
+    of time spent thinking about what to do next. 
+</p>
+
+{% for playbook in site.playbooks %}
+
+<div class='playbook'>
+    {{ forloop.index }}.
+    <a href="{{ site.path }}{{ playbook.url }}">{{ playbook.name }}</a>
+    <small>{{ playbook.date | date: "%b %-d, %Y" }}</small>
+</article>
+
+{% endfor %}
