@@ -13,23 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Synek
+title: Rory Byrne
 email: rory@syze.ai
 description: >- # this means to ignore newlines until "baseurl:"
   Spiel.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://synek.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://rory.bio" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Rory Byrne
 twitter_username: ryrobyrne
 github_username:  synek
 aboutme: >-
-  Hi, I'm Rory. I build technology while avoiding technology. I also like to cook, read, and listen to good music.
+  Hi, I'm Rory - software engineer transplant into neuroscience. Watch me learn.
 
 # Build settings
 collections_dir: collections
 
 collections:
+  learnings:
+    output: true
+    permalink: /learnings/:title/
   playbooks:
     output: true
     permalink: /playbooks/:path/

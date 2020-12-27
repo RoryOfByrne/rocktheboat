@@ -1,40 +1,57 @@
 ---
 layout: post
-title: "Living life on autopilot"
+title: "The cold-start problem in productivity"
 ---
 
-Everyone admires and looks up to the God-like "productive" people who wake up early and consistently get things done.
+How is it that some people just "get stuff done" while others get stuck on the first step?
 
-We put them on un-obtainably high pedestals, as if they are a different species, born with a 
-pen in their hand and unlimited energy. 
+There's more complexity than we think in day-to-day activities, and if you're starting "cold" on an activity - even one 
+you've done before - then your excitement and motivation can be extinguished by a simple task you've forgotten how to do.
 
-The reality is that everyone has roughly the same amount of energy, but most of us waste it. Instead of doing something, we mull it over, think about how to do it, why we should or should not do it, and ultimately we end up not doing a lot of those things after all that effort is spent. 
+This is a special case of the "not knowing what you don't know" problem, and it can be paralyzing. My solution is to
+keep playbooks - miniature guides that get you over that motivation-killing hump at the beginning of a project.
 
-What's the key to fixing that problem? The usual answer is to "use your time efficiently", but what does that even mean? To me, it means removing as many decisions as possible from my life, so that I only use my time for doing things rather than thinking about them. Any "thinking" that I do is focused on important things that are worthy of thought. 
+For example, this blog isn't easy to operate/ It's a Jekyll website hosted on Github Pages, hooked up to my domain. If
+I spent time away from it then I'll quickly forget how to operate it, and that blocker can be enough to dampen my 
+motivation to post after a break.
 
-<p class="quote">Things that require little thought should receive little thought.</p> 
+There's only 2-3 things to remember in order to operate this website, so if I can write them down (or better yet, 
+encapsulate them in a script) then the return on that time-investment could be measured in tens or dozens of blog posts.
 
-This, I reckon, is the level at which those God-like people operate. They get stuff done, and they don't do anything other than getting stuff done. That level of productivity can seem like a million miles away when you're struggling to decide what to eat for breakfast, so let's break the journey down into familiar steps: analysis, plan, and action.
- 
+There's a great CLU tool called [tldr](https://tldr.sh/) which applies this philosophy to the myriad CLI tools found on
+Linux.
+
+Anyway, here's an intro to my approach to identifying blockers, writing mini-guides ("Playbooks"), and making those guides easily
+accessible.
+
+
 ## <center>Analysis</center>
 
-To analyze how I use my time, I started keeping a time journal. This is just a section of my regular daily journal where I write down the time of everything I do each day. The goal is to answer two questions "how long do I spend making decisions about boring stuff?", and "how often to I switch contexts?".
+To analyze how I use my time, I started keeping a time journal. This is just a section of my regular daily journal where 
+I write down the time of everything I do each day. The goal is to answer two questions "how long do I spend making 
+decisions about boring stuff?", and "how often do I switch contexts?".
 
 <img src="{{ site.url }}/static/time-journal.jpg" width="800" height="300" style="object-fit: cover;">
 
-Once you have tracked a few weeks of this data (you can probably start looking at it sooner), you can count interesting things.
+Once you have tracked a few weeks of this data, you can spot interesting developments.
 
-Some of the things I looked at were: the average time I spent on an "important" task before switching to something else, the number of times I picked up my smartphone (wow!), the number of context-switches I made, and the total # of hours I spent per day on high-priority tasks.
+Some of the things I looked at were: the average time I spent on an "important" task before switching to something else, \
+the number of times I picked up my smartphone (wow!), the number of context-switches I made, and the total # of hours 
+I spent per day on high-priority tasks.
 
-Turns out, I spend a lot less time on important tasks than I thought I did, and a lot of the time I spend "doing" something is actually spent thinking about it rather than doing it. There's a lot of friction involved in getting stuff done, and it slows me down.
+Turns out, I spend a lot less time on important tasks than I thought I did, and a lot of the time I spend "doing" 
+something is actually spent thinking about it rather than doing it. 
 
-- 15 minutes looking up a recipe because I forgot, again. 
-- 30 minutes trying to re-learn to steps to update an AWS Lambda function.  
-- 20 minutes worrying about how to start marketing a blog on the internet.  
+For me, there was a lot of friction involved in getting stuff done.
+
+- 15 minutes looking up a recipe because I forgot, again.
+- 30 minutes trying to re-learn to steps to update an AWS Lambda function.
+- 20 minutes worrying about how to start marketing a blog on the internet.
 - 35-minute attention span, on average.
 - 10+ context switches in a day.
 
-These are the kinds of insights you can get from analyzing your time effectively, and it's really eye-opening. Even when we feel productive, we probably aren't. And we don't figure it out until the debt builds up high enough to be noticeable.
+These are the kinds of insights you can get from analyzing your time effectively, and it's really eye-opening. Even when 
+we feel productive, we probably aren't. And we don't figure it out until the debt builds up high enough to be noticeable.
 
 For me, the two biggest factors I noticed were:
 
@@ -45,7 +62,7 @@ My struggles can be split into two categories: __complex things__, and __annoyin
 
 ## <center>Plan</center>
 
-My strategy for improving this situation is to create recipes for completing complex and/or annoying tasks. 
+My strategy for improving this situation is to create recipes for completing complex and/or annoying tasks.
 
 Think about what a recipe looks like for something like spaghetti carbonara:
 
@@ -58,7 +75,8 @@ Think about what a recipe looks like for something like spaghetti carbonara:
 7. Add spaghetti and mix around for 30 seconds
 8. Serve.
 
-Recipes allow non-chefs to cook arbitrarily complex meals with minimal thought. This is exactly what I want, but for everything. They're called __playbooks__, and they allow me to get stuff done without requiring any extra thought. After a while, they become habits, and that's when you start to reach the God-like level of getting stuff done.
+Recipes allow non-chefs to cook arbitrarily complex meals with minimal thought. This is exactly what I want, but for 
+everything. After a while, they become habits.
 
 <p class="quote">Playbooks become habits, and habits are frictionless</p>
 
@@ -85,31 +103,35 @@ A scary, confusing, and risky task has suddenly become so easy that I can do it 
 
 ## <center>Action</center>
 
-I've tried something like this before but failed because I simply didn't use the playbooks. I half-arsed the whole thing so they weren't accessible enough and I just didn't really follow-through. To fix that, I decided to make them accessible, memorable, and easy to use. Here's some of the ways that I'm doing that so far:
+I've tried something like this before but failed because I simply didn't use the playbooks. I half-arsed the whole thing 
+so they weren't accessible enough and I just didn't really follow-through. To fix that, I decided to make them accessible, 
+memorable, and easy to use. Here's some of the ways that I'm doing that so far:
 
 #### Website
-I decided to make my playbooks available [here](http://rorys.life/playbooks/) on my website. This means I can see them from anywhere as long as I have a browser.
-
-I use Jekyll for this website, so making a new playbook is as simple as making a YAML file for each playbook, which will then be rendered using a `playbook-detail.html` template, right?
+I decided to make my playbooks available [here](http://rorys.life/playbooks/) on my website. It's a Jekyll website, so
+all I have to do is add each new playbook as a YAML file.
 
 #### JSON API
 
-Well, not quite. I wanted to *also* expose the playbooks via a JSON api. This isn't what Jekyll is designed to do, since it's a static website builder, but I found a [blog post](https://bilaw.al/building-apis-with-jekyll.html) about it.
+I also want to expose the playbooks via a JSON api. This isn't what Jekyll is designed to do, since it's a static 
+website builder, but I found a [blog post](https://bilaw.al/building-apis-with-jekyll.html) about it.
 
-This guy puts his API data into a `_data` directory structure, then exposes it in a root-level `stuff.json` file which looks like this:
+The idea is to put the API data into a `_data` directory structure, then exposes it in a root-level `stuff.json` file 
+which looks like this:
 
 <code>
         {{ site.data.stuff | jsonify }}
 </code>
 
-This doesn't work for me, since I want to 1) automatically generate webpages for my playbooks, and 2) generate a `playbooks.json` file. Jekyll allows you to render each file once, only.
+This doesn't work for me, since I want to 1) automatically generate webpages for my playbooks, and 2) generate a 
+`playbooks.json` file. Jekyll allows you to render each file once, only.
 
 The way I finally found to do this was as follows:
 
 1. Create a `collection` for my playbooks:  
-    `<root>/collections/_playbooks/`
+   `<root>/collections/_playbooks/`
 2. Configure my `_config.yml` to render those playbooks using a template:
-    
+
         collections_dir: collections 
         collections:
             playbooks:
@@ -124,15 +146,16 @@ The way I finally found to do this was as follows:
             values:
             layout: playbook-detail
 
-    The `output: true` field asks Jekyll to render each item in the `playbooks` collection, and in `defaults` I
-set the layout as `playbook-detail`.
+   The `output: true` field asks Jekyll to render each item in the `playbooks` collection, and in `defaults` I
+   set the layout as `playbook-detail`.
 
-    So far, so good: I can add files to the `collections/_playbooks/` directory and they will be rendered using a template.
-3. Next, I did something sneaky: I wrote the playbooks in YAML format but stored them as `.md` files in the collection directory. 
+   So far, so good: I can add files to the `collections/_playbooks/` directory and they will be rendered using a template.
+3. Next, I did something sneaky: I wrote the playbooks in YAML format but stored them as `.md` files in the collection directory.
 
-    Since they're .md files, Jekyll will pick them up and process them using the template, but since they're YAML structure, I can do the following:
+   Since they're .md files, Jekyll will pick them up and process them using the template, but since they're YAML structure, 
+   I can do the following:
 4. Create a root-level `playbooks.json` file which looks like this:
-    
+
         {% raw %}
         ---
         ---
@@ -148,8 +171,9 @@ set the layout as `playbook-detail`.
 
         {% endraw %}
 
-    My `playbooks.json` file just loops through the structured YAML file to create a JSON file which is essentially my API. Job done!
+   My `playbooks.json` file just loops through the structured YAML file to create a JSON file which is essentially my API. Job done!
 
-I created a command-line tool to consume the API, available [here](https://github.com/RoryOfByrne/Playbook-Viewer).
+I created a command-line tool to consume the API, available [here](https://github.com/synek/Playbook-Viewer).
 
-I'm planning to do more stuff to make these playbooks accessible, and hopefully I can get to the point where they actually help me create new habits and get stuff done quickly and painlessly.
+I'm planning to do more stuff to make these playbooks accessible, and hopefully I can get to the point where they 
+actually help me create new habits and get stuff done quickly and painlessly.

@@ -6,6 +6,7 @@
 
 
 @import 'settings';
+@import 'reset';
 
 
 html {
@@ -51,17 +52,22 @@ h1 {
   font-size: 2rem;
 }
 h2 {
-  margin-top: 1rem;
+  //margin-top: 1rem;
   font-size: 1.5rem;
+  //padding-bottom: 2rem;
 }
 h3 {
-  margin-top: 1.5rem;
+  //margin-top: 1.5rem;
   font-size: 1.25rem;
-  padding-bottom: 2rem;
+  //padding-bottom: 2rem;
 }
 h4, h5, h6 {
-  margin-top: 1rem;
+  //margin-top: 1rem;
   font-size: 1rem;
+}
+
+.page-heading {
+  padding-bottom: 2rem;
 }
 
 /////////////
@@ -192,7 +198,7 @@ table {
 //   -- centers page content
 
 .container {
-  max-width: 45rem;
+  max-width: 60rem;
   padding-left:  1rem;
   padding-right: 1rem;
   padding-top: 2rem;
@@ -310,9 +316,89 @@ table {
   color: $post-date-color;  
 }
 
+
+//////////////////////////
+// Learnings
+
+.learning-short {
+  border-radius: 16px;
+  background-color: $light-gray;
+  padding: 20px;
+
+  .post-title a {
+    text-decoration: none;
+  }
+
+  .tags {
+    display: flex;
+
+    .tag {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      background-color: #e6e6e6;
+      color: #47454b;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.learning {
+  margin-bottom: 4em;
+
+  .post-metadata {
+    display: flex;
+    align-items: baseline;
+
+    .metadata-title {
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-right: 1rem;
+    }
+  }
+
+  ul, ol {
+    font-family: $post-font-family;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-family: $post-font-family;
+  }
+
+  p.quote {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  // note: only change margin for title,date if inside post block
+  .post-title {
+    margin-top: 0;
+  }
+
+  // Meta data line below post title
+  .post-date {
+    display: block;
+    margin-top:  -.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
 //////////////////////////
 // Misc.
 
 .mb-3 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pop-out {
+  padding: 2rem;
+  background-color: $light-gray;
 }

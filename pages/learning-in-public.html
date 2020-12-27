@@ -1,0 +1,27 @@
+---
+layout: default
+title: Learning in public
+permalink: /learnings/
+---
+
+<h2 class="page-heading">Learning in Public</h2>
+
+{% for post in site.learnings %}
+
+<div class='learning-short'>
+    <h3 class='post-title'>
+        <a href="{{ site.path }}{{ post.url }}">
+            {{ post.title }}
+        </a>
+    </h3>
+    <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+    <div class="mb-3"></div>
+    <div class="tags">
+        {% for topic in post.topics %}
+        <div class="tag">{{ topic }}</div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endfor %}
+
