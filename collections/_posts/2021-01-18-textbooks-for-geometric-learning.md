@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why textbooks are the best way to learn"
+title: "Geometric reasoning and learning through textbooks"
 ---
 
 Most knowledge is tribal. Ideas have no form until we impose one for the purposes of communicating the idea to others,
