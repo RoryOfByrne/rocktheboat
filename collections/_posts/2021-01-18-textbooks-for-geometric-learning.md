@@ -15,7 +15,7 @@ say things like "concept A is tangential to concept B". When we share an idea wi
 it, so that the receiver can use their tools of abstract reasoning to comprehend it. It should be no surprise,
 therefore, that the type of reasoning we rely on most is the one that evolved in-step with our highly advanced visual cortex.
 
-So how is this related to learning, and where to textbooks come into it? In learning, we use geometric reasoning to make
+So how is this related to learning, and where do textbooks come into it? In learning, we use geometric reasoning to make
 predictions about the structure and content of future information, and then we compare that with the future information that 
 we receive. For this to be effective, information must have useful structure, and be easy to manipulate geometrically
 with our reasoning abilities. That information must also be comprehensive, so that we have enough content to play with. 
