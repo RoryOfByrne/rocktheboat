@@ -6,16 +6,25 @@
   state: shelf
 - author: Andrew Roberts
   title: Napoleon The Great
-  state: reading
+  state: shelf
 - author: Michael Nygard
   title: Release It!
   state: shelf
 - author: Joshua Bloch
   title: Effective Java
-  state: reading
+  state: shelf
 - author: William Gibson
   title: Neuromancer
   state: shelf
 - author: K. Kogon, S. Blakemore, J. Wood
   title: PM for the unofficial PM
   state: shelf
+- author: Matthew Cobb
+  title: The Idea of The Brain
+  state: reading
+- author: Thomas P. Trappenberg
+  title: Fundamentals of Computational Neuroscience
+  state: reading
+- author: James Stewart
+  title: Calculus
+  state: reading
